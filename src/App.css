@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.task-name{
+  cursor: pointer;
+}
+.completed-task{
+  text-decoration: line-through;
+}
+
+.card li {
+  float: left;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  max-width: 360px;
+  margin: 10px auto;
+}
+
+form.createform {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.fruits-list {
+  float: left;
+  width: 100%;
+  background: #0256a2;
+}
+.list-none li {
+  float: left;
+  padding: 22px;
+  border: 1px solid #057ce8;
+  list-style: none;
+  color: white;
+}
+.list-none h1 {
+  color: white;
+}
+
+
+
+/*===== Class Component Css ==== */
+
+.colsm {
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+}
+
+.colsm img {
+  width: 100%;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.colsm {
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.colsm .title-left {
+  float: left;
+  width: 90%;
+  text-align: left;
+  font-size: 20px;
+}
+.colsm .price-right {
+  float: left;
+  width: 10%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+.colsm .details {
+  float: left;
+  width: 100%;
+  text-align: justify;
+  font-size: 15px;
+  height: 100px;
+}
+button.btn.btn-primary {
+  float: left;
+}
+
+.card-bottom {
+  background: #f2ece5;
+  float: left;
+  width: 100%;
+  padding: 27px;
+  border: 1px solid #e2dbd3;
+}
+
+button.btn.btn-primary {
+    margin: 0px 10px 0px 0px;
+}
