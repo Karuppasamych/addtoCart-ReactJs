@@ -1,8 +1,8 @@
 import React,{ useState } from 'react';
 import {Navigate, Link, useNavigate} from "react-router-dom";
-import axios from 'axios';
+// import axios from 'axios';
 
-const Products = (props)=>{
+const Login = ()=>{
 
     const [data , setData] = useState([
 
@@ -36,10 +36,6 @@ const Products = (props)=>{
     const [username, setUsername]=useState('')
     const [password, setPassword]=useState('')
 
-    const [formdata, setFormdata]= useState([{
-        username:'',
-        password:''
-    }]);
 
     
 const onFormFieldChange = (e) =>{
@@ -70,7 +66,11 @@ const submitform = (e) =>{
         //     fullname: this.state.fullname,
         // })
 
-        navigate('/home')
+        navigate({
+            
+            pathname:'/home',
+            search :'?name=react&age=45'
+        });
     }
 
     
@@ -90,11 +90,11 @@ const submitform = (e) =>{
                             {/* <label htmlFor="floatingInput">Product Name</label> */}
                         </div>
                         <div className="form-floating mb-3">
-                            <input type="text" className="form-control" name="username" value={formdata.username} onChange={onFormFieldChange}  id="categories" placeholder="Categories" required/>
+                            <input type="text" className="form-control" name="username" value={username} onChange={onFormFieldChange}  id="categories" placeholder="Categories" required/>
                             <label htmlFor="floatingCategories">UserName</label>
                         </div>
                         <div className="form-floating mb-3">
-                            <input type="password" className="form-control" name="password" value={formdata.price} onChange={onFormFieldChange}  id="price" placeholder="Price" required/>
+                            <input type="password" className="form-control" name="password" value={password} onChange={onFormFieldChange}  id="price" placeholder="Price" required/>
                             <label htmlFor="floatingPrice">Password</label>
                         </div>
                         {/* <Link to='/home'>
@@ -110,4 +110,4 @@ const submitform = (e) =>{
     
 }
 
-export default Products;
+export default Login;

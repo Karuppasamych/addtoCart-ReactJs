@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-// import {  Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 
 
@@ -17,17 +17,17 @@ const Navbar = () =>{
                     <div className="collapse navbar-collapse" id="mynavbar">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item" >
-                        {/* <Link to ="/" className="nav-link">Products</Link> */}
-                         <a href ="/" className="nav-link">Products</a>
+                        <Link to ="/" className="nav-link">Login</Link>
+                         {/* <a href ="/" className="nav-link">home</a> */}
 
                         </li>
                         <li className="nav-item" to="/home">
-                        {/* <Link to ="/home" className="nav-link" >Categories</Link> */}
-                        <a href ="/" className="nav-link">Categories</a>
+                        <Link to ="/home" className="nav-link" >Products</Link>
+                        {/* <a href ="/" className="nav-link">Categories</a> */}
                         </li>
                         <li className="nav-item">
-                        {/* <Link to ="/accessories" className="nav-link">Accessories</Link> */}
-                        <a href ="/" className="nav-link">Accessories</a>
+                        <Link to ="/cartdetails" className="nav-link">Cart Details</Link>
+                        {/* <a href ="/cartdetails" className="nav-link">Cart Details</a> */}
                         </li>
                     </ul>
                     <form className="d-flex">

@@ -24,6 +24,13 @@
   color: white;
 }
 
+.p-4.bg-dark.text-white.text-center {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 .App-link {
   color: #61dafb;
 }

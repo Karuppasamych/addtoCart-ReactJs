@@ -72,14 +72,13 @@ class Bodycontent extends React.Component{
                 })}
                 </div>
     
-                <div className="row">
+                {/* <div className="row">
                     {this.state.productname}
                 </div>
 
                 <div className="row">
                     <Firstclass handleGetdata={this.handleGetdata}/>
                     <h2>AC Lists Added Here</h2>
-                    {/* <h2>{this.state.childdata.name}</h2> */}
                     <ul>
                     
                     {Object.entries(this.state.childdata).map(([key, value]) => {
@@ -92,7 +91,7 @@ class Bodycontent extends React.Component{
 
 
                     </ul>
-                </div>
+                </div> */}
 
                 
                 
